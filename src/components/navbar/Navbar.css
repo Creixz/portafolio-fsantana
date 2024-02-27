@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anta&display=swap');
+.nav__wrapper {
+    background: rgba(0,0,0,0.1);
+    padding: 0.5rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 30;
+    backdrop-filter: blur(50px);
+}
+
+.nav__container {
+    max-width: 1300px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 0;
+    margin: 0 auto;
+}
+
+.nav__logo {
+    /* font-family: "Dancing Script", cursive; */
+    font-family: "Anta", sans-serif;
+    font-size: 2.5rem;
+    font-weight: 400;
+    background: linear-gradient(90deg, #facc34 0%, #ff7b53 40%, #fd3b00 80%);
+    background-clip: text;
+    padding: 0.2rem;
+    color: transparent;
+}
+
+.nav__logo:hover {
+    background: linear-gradient(90deg, #fd3b00 0%, #ff7b53 40%, #facc34 100%);
+    background-clip: text;
+    color: transparent;
+}
+
+.menu__list {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    list-style: none;
+}
+.list__item {
+    margin: 0 1.5rem;
+}
+.menu__item {
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #fff;
+    position: relative;
+    cursor: pointer;
+}
+
+.menu__item::before {
+    content: "";
+    width: 2rem;
+    height: 0.2rem;
+    background: linear-gradient(90deg, #facc34 0%, #ff7b53 40%, #fd3b00 80%);
+    border-radius: 0.5rem;
+    position: absolute;
+    bottom: -0.4rem;
+    opacity: 0;
+    transform: translateX(-1.5rem);
+    transition: all 0.3s ease;
+}
+
+.menu__item:hover::before {
+    width: 100%;
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.nav__button {
+    font-size: 0.9rem;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    background: linear-gradient(90deg, #fa825d 0%, #dd3400 100%);
+    padding: 0.6rem 2rem;
+    border: none;
+    outline: 1.5px solid transparent;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.nav__button:hover {
+    outline: 1.5px solid #fd7046;
+    background: #000;
+    color: #ff825c;
+}
+
+.sidebar__button {
+    width: 2.5rem;
+    height: 2.5rem;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 0.4rem;
+    color: #fff;
+    background: linear-gradient(90deg, #fa825d 0%, #dd3400 100%);
+    line-height: 0;
+    cursor: pointer;
+    transition: all 0.4s ease;
+    display: none;
+}
+
+.sidebar__button:hover {
+    color: #ff825c;
+    background: #000;
+    border: 1px solid #fd7046;
+}
+
+@media (max-width: 425px) {
+    .nav__logo {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 855px) {
+    .sidebar__button {
+        display: block;
+    }
+
+    .menu__list {
+        display: none;
+    }
+}
+
+@media (max-width: 1325px) {
+    .nav__wrapper {
+        padding: 0 2rem;
+    }
+}
+
+@media (max-width: 983px) {
+    .list__item {
+        margin: 0 0.5rem;
+    }
+}
+
