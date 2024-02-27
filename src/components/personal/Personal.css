@@ -167,6 +167,10 @@
         gap: 1rem;
     }
 
+    .vertical__icons {
+        gap: 1rem;
+    }
+
     .personal__img > div {
         gap: 1rem;
     }
