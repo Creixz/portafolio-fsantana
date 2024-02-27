@@ -18,7 +18,7 @@ const Navbar = () => {
 
       <nav className="nav__wrapper">
         <div className="nav__container">
-          <p className="nav__logo">fsantana.dev</p>
+          <p className={`nav__logo ${openMenu ? "active" : ""}`}>fsantana.dev</p>
           <ul className='menu__list'>
             <li className='list__item'><a className="menu__item">Home</a></li>
             <li className='list__item'><a className="menu__item">Skills</a></li>

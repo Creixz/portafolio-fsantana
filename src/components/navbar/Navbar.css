@@ -25,8 +25,12 @@
     font-weight: 400;
     background: linear-gradient(90deg, #facc34 0%, #ff7b53 40%, #fd3b00 80%);
     background-clip: text;
-    padding: 0.2rem;
     color: transparent;
+}
+
+.nav__logo.active {
+    color: transparent;
+    background: none;
 }
 
 .nav__logo:hover {

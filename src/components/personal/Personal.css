@@ -1,0 +1,180 @@
+.personal__container {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.personal__container::after, .personal__container::before {
+    content: '';
+    width: 28.125rem;
+    height: 28.125rem;
+    border-radius: 28.125rem;
+    background-color: #fd7046;
+    position: absolute;
+    z-index: -1;
+    filter: blur(225px);
+}
+
+.personal__container::after {
+    top: -3rem;
+    left: -5rem;
+}
+
+.personal__container::before {
+    bottom: -3rem;
+    right: 0rem;
+}
+
+.personal__content {
+    flex: 1;
+}
+
+.personal__content h2 {
+    font-size: 3.8rem;
+    font-weight: 600;
+    line-height: 5rem;
+    margin-bottom: 1rem;
+}
+
+.personal__content p {
+    width: 80%;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 2rem;
+}
+.personal__img {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 5rem;
+}
+
+.personal__img > div {
+    display: flex;
+    align-items: flex-end;
+    gap: 2rem;
+}
+
+.fsantana__img {
+    width: 25rem;
+    border-radius: 2rem;
+    transition: all 0.3s ease;
+}
+
+.tech__icon {
+    width: 5rem;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 0.65rem;
+    border: 1.5px solid #fd7046;
+}
+
+.tech__icon > * {
+    font-size: 3rem;
+    transition: all 0.3s ease;
+}
+
+.fsantana__img:hover, .tech__icon:hover > * {
+    transform: translateY(-0.5rem);
+}
+
+@media (max-width: 1025px) {
+    .personal__content h2 {
+        font-size: 3rem;
+        line-height: 4rem;
+    }
+
+    .personal__content p {
+        font-size: 0.9rem;
+        line-height: 1.6rem;
+    }
+
+    .fsantana__img {
+        width: 20rem;
+    }
+
+    .tech__icon {
+        width: 4rem;
+        height: 4rem;
+    }
+
+    .tech__icon > * {
+        width: 2.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .personal__container {
+        flex-direction: column;
+    }
+
+    .personal__img {
+        margin: 2rem 0 2rem 0;
+    }
+
+    .personal__container h2 {
+        margin-top: 3rem;
+    }
+
+    .personal__content h2,
+    .personal__content p {
+        width: auto;
+        text-align: center;
+    }
+
+    .personal__container::after,
+    .personal__container::before {
+        content: '';
+        width: 18rem;
+        height: 18rem;
+    }
+
+    .personal__container::after {
+        top: 0rem;
+        left: 0rem;
+    }
+
+    .personal__container::before {
+        bottom: 2rem;
+        right: 0rem;
+    }
+
+}
+
+@media (max-width: 600px) {
+    .personal__content h2 {
+        font-size: 2.2rem;
+        line-height: 3rem;
+    }
+
+    .personal__content p {
+        font-size: 0.8rem;
+        line-height: 1.3rem;
+    }
+
+    .personal__img {
+        gap: 1rem;
+    }
+
+    .personal__img > div {
+        gap: 1rem;
+    }
+
+    .fsantana__img {
+        width: 16rem;
+    }
+
+    .tech__icon {
+        width: 3.3rem;
+        height: 3.3rem;
+    }
+
+    .tech__icon > * {
+        width: 2rem;
+    }
+}
