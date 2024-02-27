@@ -57,6 +57,12 @@
     gap: 2rem;
 }
 
+.vertical__icons {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
 .fsantana__img {
     width: 25rem;
     border-radius: 2rem;
@@ -108,7 +114,7 @@
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 800px) {
     .personal__container {
         flex-direction: column;
     }
