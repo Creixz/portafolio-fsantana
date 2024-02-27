@@ -6,6 +6,7 @@ import { FaCss3Alt } from "react-icons/fa6";
 import { RiJavascriptFill } from "react-icons/ri";
 import { FaJava } from "react-icons/fa6";
 import { SiSpringboot } from "react-icons/si";
+import { SiSpringsecurity } from "react-icons/si";
 
 const Personal = () => {
   return (
@@ -17,6 +18,9 @@ const Personal = () => {
       <div className="personal__img">
         <div>
           <div className='vertical__icons'>
+          <div className="tech__icon">
+              <SiSpringsecurity style={{ color: '#6db33f' }} />
+            </div>
             <div className="tech__icon">
               <SiSpringboot style={{ color: '#6db33f' }} />
             </div>
