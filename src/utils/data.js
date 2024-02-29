@@ -39,3 +39,36 @@ export const SKILLS = [
         ],
     },
 ];
+
+export const WORK_AND_PROYECT_EXPERIENCE = [
+    {
+        title: "Clement's Plast with Java (JSP y Servlets)",
+        date: "July 2021 - December 2021",
+        responsabilities: [
+            "Proyecto web punto de venta para la empresa Clement's Plast.",
+            "Este proyecto tenia CRUD de empleados, clientes, productos, categorias, etc.",
+            "Participé en la feria de proyectos organizada por la UTP con este proyecto.",
+            "Se utilizó tecnologías aprendidas en el ciclo como JSP, JSF y Servlets.",
+        ],
+    },
+    {
+        title: "Docente académico de matemática en Colegios Trilce ",
+        date: "July 2018 - Present",
+        responsabilities: [
+            "Dictado de los cursos de Razonamiento Matemático de 1ro a 5to de secundaria.",
+            "Elaboración de la programación anual, sesiones de clase y actividades de reforzamiento.",
+            "Elaboración de exámenes diarios, semanales, bimestrales y material a utilizar.",
+            "Revisión de prácticas calificadas, exámenes mensuales y exámenes bimestrales.",
+        ],
+    },
+    {
+        title: "Clement's Plast with React and SpringBoot",
+        date: "July 2023 - December 2023",
+        responsabilities: [
+            "Se creó una versión mejorada del punto de venta Clement´s Plast utilizando React en el Frontend y SpringBoot en el backend.",
+            "Se utilizó también Spring Security 6 implementando JWT para la autentificación de usuarios (empleados y administrador).",
+            "Se utilizaron componentes reutilizables y diferentes librerias para complementar la parte del frontend.",
+            "Se implementó la metodología SCRUM para desarrollar este proyecto utilizando sprints",
+        ],
+    },
+]

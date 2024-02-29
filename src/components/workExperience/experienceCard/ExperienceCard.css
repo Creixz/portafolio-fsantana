@@ -1,0 +1,57 @@
+.work__experience-card {
+    background: #2a1a0f;
+    border-radius: 0.65rem;
+    border: 1.5px solid #b96e51;
+    padding: 1.5rem;
+    margin: 0 1rem;
+}
+
+.work__experience-card h6 {
+    font-size: 1.05rem;
+    font-weight: 500;
+    margin-bottom: 0.7rem;
+}
+
+.work__duration {
+    display: inline-block;
+    font-size: 0.7rem;
+    font-weight: 400;
+    background: rgba(185, 131, 81, 0.5);
+    border-radius: 0.3rem;
+    padding: 0.4rem 0.6rem;
+    margin-bottom: 1.3rem;
+}
+
+.work__experience-card ul li {
+    list-style: none;
+    font-size: 0.8rem;
+    font-weight: 400;
+    margin-bottom: 0.5rem;
+    position: relative;
+}
+
+.work__experience-card ul li::after {
+    content: '';
+    width: 0.5rem;
+    height: 0.5rem;
+    background-color: #b97b51;
+    border-radius: 50%;
+    position: absolute;
+    left: -1.3rem;
+    top: 0.30rem;
+
+}
+
+@media (max-width: 768px) {
+    .work__experience-card {
+        margin: 0;
+    }
+
+    .work__experience-card h6 {
+        font-size: 0.95rem;
+    }
+
+    .work__experience-card ul li {
+        font-size: 0.75rem;
+    }
+}
