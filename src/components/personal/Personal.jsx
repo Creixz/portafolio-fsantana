@@ -12,8 +12,8 @@ const Personal = () => {
   return (
     <section className='personal__container'>
       <div className="personal__content">
-        <h2>Building Digital Experiences That Inspire</h2>
-        <p>Passionate Frontend Developer | Transforming Ideas into Seamless and Visually Stunning Web Solutions</p>
+        <h2>Construyendo Experiencias Digitales que Inspiran</h2>
+        <p>Passionate Frontend and Java Developer | Creando aplicaciones digitales que transformen vidas y revolucionen el aprendizaje.</p>
       </div>
       <div className="personal__img">
         <div>
