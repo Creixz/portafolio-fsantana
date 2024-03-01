@@ -13,8 +13,6 @@ const Navbar = ({ scrollToContact, scrollToExperience }) => {
     setOpenMenu(!openMenu);
   }
 
-  
-
   return (
     <>
       <MobileNav isOpen = {openMenu} toggleMenu={toggleMenu}/>
