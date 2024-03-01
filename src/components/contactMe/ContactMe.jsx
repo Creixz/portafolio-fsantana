@@ -11,10 +11,12 @@ const ContactMe = () => {
                 <div style={{ flex: 1 }}>
                     <ContactInfoCard
                         iconUrl="./empty-email_80599.png"
-                        text="s.freddy131@gmail.com" />
+                        text="s.freddy131@gmail.com"
+                        direccion="https://mail.google.com/mail/u/0/?view=cm&fs=1&tf=1&to=s.freddy131@gmail.com" />
                     <ContactInfoCard
                         iconUrl="./github_1051326.png"
-                        text="https://github.com/Creixz" />
+                        text="https://github.com/Creixz"
+                        direccion= "https://github.com/Creixz" />
                 </div>
                 <div style={{ flex: 1 }}>
                     <ContactForm />

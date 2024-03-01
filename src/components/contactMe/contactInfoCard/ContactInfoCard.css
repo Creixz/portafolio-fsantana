@@ -20,6 +20,11 @@
     background: #725530;
     margin-bottom: 0.8rem;
 }
+
+.icon {
+    cursor: pointer;
+}
+
 .img__icon {
     filter: invert(1);
     width: 1.8rem;
