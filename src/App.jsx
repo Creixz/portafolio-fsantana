@@ -5,6 +5,7 @@ import Personal from './components/personal/Personal'
 import Skills from './components/skills/Skills'
 import WorkExperience from './components/workExperience/WorkExperience'
 import ContactMe from './components/contactMe/ContactMe'
+import Footer from './components/footer/Footer'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -18,6 +19,7 @@ function App() {
         <WorkExperience />
         <ContactMe />
       </div>
+      <Footer />
     </>
   )
 }
