@@ -10,9 +10,9 @@ const ContactMe = () => {
             <div className="contact__content">
                 <div style={{ flex: 1 }}>
                     <ContactInfoCard
-                        iconUrl="./empty-email_80599.png"
-                        text="s.freddy131@gmail.com"
-                        direccion="https://mail.google.com/mail/u/0/?view=cm&fs=1&tf=1&to=s.freddy131@gmail.com" />
+                        iconUrl="./linkedin_1384088.png"
+                        text="https://www.linkedin.com"
+                        direccion="https://www.linkedin.com/in/freddy-santana-salas-03931b233/" />
                     <ContactInfoCard
                         iconUrl="./github_1051326.png"
                         text="https://github.com/Creixz"
