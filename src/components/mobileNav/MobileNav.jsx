@@ -11,10 +11,10 @@ const MobileNav = ({ isOpen, toggleMenu }) => {
         <p className="mobile__nav-logo">fsantana.dev</p>
         <ul className='mobile__menu-list'>
           <li className='list__item'><Link to='top' className="menu__item" onClick={toggleMenu}>Home</Link></li>
-          <li className='list__item'><Link to='skills' className="menu__item" onClick={toggleMenu}>Skills</Link></li>
-          <li className='list__item'><Link to='experience' className="menu__item" onClick={toggleMenu}>Work Experience</Link></li>
-          <li className='list__item'><Link to='contact' className="menu__item" onClick={toggleMenu}>Contact me</Link></li>
-          <button className="nav__button" onClick={toggleMenu}><Link to='contact'>Hire Me</Link></button>
+          <li className='list__item'><Link to='skills' className="menu__item" onClick={toggleMenu} offset={-90}>Skills</Link></li>
+          <li className='list__item'><Link to='experience' className="menu__item" onClick={toggleMenu} offset={-90}>Work Experience</Link></li>
+          <li className='list__item'><Link to='contact' className="menu__item" onClick={toggleMenu} offset={-90}>Contact me</Link></li>
+          <Link className='nav__button' to='contact' onClick={toggleMenu} offset={-90}>Hire Me</Link>
         </ul>
       </div>
     </div>

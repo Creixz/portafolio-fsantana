@@ -22,10 +22,10 @@ const Navbar = ({ scrollToContact, scrollToExperience }) => {
           <p className={`nav__logo ${openMenu ? "active" : ""}`}>fsantana.dev</p>
           <ul className='menu__list'>
             <li className='list__item'><Link to='top' className="menu__item">Home</Link></li>
-            <li className='list__item'><Link to='skills' className="menu__item">Skills</Link></li>
-            <li className='list__item'><Link to='experience' className="menu__item">Work Experience</Link></li>
+            <li className='list__item'><Link to='skills' className="menu__item" offset={-100}>Skills</Link></li>
+            <li className='list__item'><Link to='experience' className="menu__item" offset={-100}>Work Experience</Link></li>
             <li className='list__item'><Link to='contact' className="menu__item">Contact me</Link></li>
-            <button className="nav__button"><Link to='contact'>Hire Me</Link></button>
+            <Link className='nav__button' to='contact' offset={-90}>Hire Me</Link>
           </ul>
           <button className="sidebar__button" onClick={toggleMenu}>
             {openMenu ? <MdOutlineClose /> : <MdOutlineDensityMedium />}
