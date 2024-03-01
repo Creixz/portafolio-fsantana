@@ -1,0 +1,28 @@
+.contact__details-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #2a190f;
+    border-radius: 0.65rem;
+    border: 1.5px solid #b97751;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.contact__details-card .icon {
+    width: 4rem;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.5rem;
+    background: #725530;
+    margin-bottom: 0.8rem;
+}
+.img__icon {
+    filter: invert(1);
+    width: 1.8rem;
+    height: auto;
+    object-fit: contain;
+}
