@@ -3,14 +3,17 @@ import './Navbar.css'
 import { MdOutlineDensityMedium } from "react-icons/md";
 import { MdOutlineClose } from "react-icons/md";
 import MobileNav from '../mobileNav/MobileNav';
+import { Link } from 'react-scroll';
 
-const Navbar = () => {
+const Navbar = ({ scrollToContact, scrollToExperience }) => {
 
   const [openMenu, setOpenMenu] = useState(false);
 
   const toggleMenu = () => {
     setOpenMenu(!openMenu);
   }
+
+  
 
   return (
     <>
@@ -20,11 +23,11 @@ const Navbar = () => {
         <div className="nav__container">
           <p className={`nav__logo ${openMenu ? "active" : ""}`}>fsantana.dev</p>
           <ul className='menu__list'>
-            <li className='list__item'><a className="menu__item">Home</a></li>
-            <li className='list__item'><a className="menu__item">Skills</a></li>
-            <li className='list__item'><a className="menu__item">Work Experience</a></li>
-            <li className='list__item'><a className="menu__item">Contact me</a></li>
-            <button className="nav__button" onClick={() => { }}>Hire Me</button>
+            <li className='list__item'><Link to='top' className="menu__item">Home</Link></li>
+            <li className='list__item'><Link to='skills' className="menu__item">Skills</Link></li>
+            <li className='list__item'><Link to='experience' className="menu__item">Work Experience</Link></li>
+            <li className='list__item'><Link to='contact' className="menu__item">Contact me</Link></li>
+            <button className="nav__button"><Link to='contact'>Hire Me</Link></button>
           </ul>
           <button className="sidebar__button" onClick={toggleMenu}>
             {openMenu ? <MdOutlineClose /> : <MdOutlineDensityMedium />}

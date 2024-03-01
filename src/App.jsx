@@ -11,7 +11,7 @@ function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <>
+    <div id='top'>
       <Navbar />
       <div className="container">
         <Personal />
@@ -20,7 +20,7 @@ function App() {
         <ContactMe />
       </div>
       <Footer />
-    </>
+    </div>
   )
 }
 
