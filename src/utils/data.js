@@ -42,6 +42,26 @@ export const SKILLS = [
 
 export const WORK_AND_PROYECT_EXPERIENCE = [
     {
+        title: "Gestión de notas with React and SpringBoot",
+        date: "March 2024 - July 2024",
+        responsabilities: [
+            "Se creó un sistema que gestiona notas y usuarios (docentes y alumnos) con React y SpringBoot.",
+            "Se utilizó también Spring Security 6 implementando JWT para la autentificación de usuarios (administrador y profesores).",
+            "Se utilizaron componentes reutilizables y diferentes librerias para complementar la parte del frontend.",
+            "Se implementó la metodología SCRUM para desarrollar este proyecto utilizando sprints",
+        ],
+    },
+    {
+        title: "Clement's Plast with React and SpringBoot",
+        date: "July 2023 - December 2023",
+        responsabilities: [
+            "Se creó una versión mejorada del punto de venta Clement´s Plast utilizando React en el Frontend y SpringBoot en el backend.",
+            "Se utilizó también Spring Security 6 implementando JWT para la autentificación de usuarios (empleados y administrador).",
+            "Se utilizaron componentes reutilizables y diferentes librerias para complementar la parte del frontend.",
+            "Se implementó la metodología SCRUM para desarrollar este proyecto utilizando sprints",
+        ],
+    },
+    {
         title: "Clement's Plast with Java (JSP y Servlets)",
         date: "July 2021 - December 2021",
         responsabilities: [
@@ -61,14 +81,11 @@ export const WORK_AND_PROYECT_EXPERIENCE = [
             "Revisión de prácticas calificadas, exámenes mensuales y exámenes bimestrales.",
         ],
     },
-    {
-        title: "Clement's Plast with React and SpringBoot",
-        date: "July 2023 - December 2023",
-        responsabilities: [
-            "Se creó una versión mejorada del punto de venta Clement´s Plast utilizando React en el Frontend y SpringBoot en el backend.",
-            "Se utilizó también Spring Security 6 implementando JWT para la autentificación de usuarios (empleados y administrador).",
-            "Se utilizaron componentes reutilizables y diferentes librerias para complementar la parte del frontend.",
-            "Se implementó la metodología SCRUM para desarrollar este proyecto utilizando sprints",
-        ],
-    },
 ]
+
+export const PROJECTS = [
+    { name: 'Gestión de Usuario y Notas - Colegio', link: 'https://gradelify-frontend-react-app.vercel.app/' },
+    { name: 'Calculadora de edad', link: 'https://age-calculator-app-fsantana.vercel.app/' },
+    { name: 'NewsLetter sign up form', link: 'https://news-letter-sign-up-form-fsantana.vercel.app/' },
+    // Añade más proyectos según sea necesario
+  ];

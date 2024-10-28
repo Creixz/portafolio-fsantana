@@ -1,0 +1,16 @@
+.project-card {
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+    border: 1px solid #fd7046;
+    cursor: pointer;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 500;
+    background: rgba(47, 24, 17, 0.398);
+    transition: transform 0.3s;
+  }
+
+  .project-card:hover {
+    transform: scale(1.05);
+  }

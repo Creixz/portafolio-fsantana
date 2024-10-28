@@ -1,0 +1,20 @@
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+  }
+
+.projects-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    
+}
+
+.project-description {
+    margin-bottom: 2.5rem;
+}
+
+.project-description span {
+    font-weight: 700;
+    color: #fd7046;
+}
